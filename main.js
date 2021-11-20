@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', init);
 
 function init() {
 
-    TrackJS.track('Testing TrackJS!');
+    throw new error('trying trackjs');
     
     if(window.onerror){
         var oldError = window.onerror;
