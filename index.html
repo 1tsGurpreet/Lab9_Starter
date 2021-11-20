@@ -7,6 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab 9</title>
 
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+  window.TrackJS && TrackJS.install({ 
+    token: "002a65c7253646d9a9cad6e5a6de3873"
+    // for more configuration options, see https://docs.trackjs.com
+  });
+  </script>
+  
+   <!-- Main Scripts -->
+   <script src="./main.js" type="module"></script>
+
   <style>
     button {
       margin: 3px;
@@ -69,21 +80,21 @@
     </form>
 
     <section id="error-btns">
-      <button>Console Log</button>
-      <button>Console Error</button>
-      <button>Console Count</button>
-      <button>Console Warn</button>
-      <button>Console Assert</button>
-      <button>Console Clear</button>
-      <button>Console Dir</button>
-      <button>Console dirxml</button>
-      <button>Console Group Start</button>
-      <button>Console Group End</button>
-      <button>Console Table</button>
-      <button>Start Timer</button>
-      <button>End Timer</button>
-      <button>Console Trace</button>
-      <button>Trigger a Global Error</button>
+      <button id='consoleLog'>Console Log</button>
+      <button id='consoleError'>Console Error</button>
+      <button id='consoleCount'>Console Count</button>
+      <button id='consoleWarn'>Console Warn</button>
+      <button id='consoleAlert'>Console Assert</button>
+      <button id='consoleClear'>Console Clear</button>
+      <button id='consoleDir'>Console Dir</button>
+      <button id='consoleDirXml'>Console dirxml</button>
+      <button id='consoleGroupStart'>Console Group Start</button>
+      <button id='consoleGroupEnd'>Console Group End</button>
+      <button id='consoleTable'>Console Table</button>
+      <button id='startTimer'>Start Timer</button>
+      <button id='endTimer'>End Timer</button>
+      <button id='consoleTrace'>Console Trace</button>
+      <button id='globalError'>Trigger a Global Error</button>
     </section>
   </main>
 
